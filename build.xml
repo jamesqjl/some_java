@@ -39,7 +39,7 @@
     </target>
 
     <target name="junit" depends="tjar">
-        <junit printsummary="yes" fork="yes">
+        <junit printsummary="yes" fork="true">
         <classpath refid="classpath" />
         <classpath location="test"/>
         <test name="hellotest" haltonfailure="no" todir="test/results">
