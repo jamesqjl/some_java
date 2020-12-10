@@ -38,8 +38,8 @@
         <java jar="build/jar/hello.jar" fork="true"/>
     </target>
 
-    <target name="junit" depends="tjar" fork="true">
-        <junit printsummary="yes">
+    <target name="junit" depends="tjar">
+        <junit printsummary="yes" fork="true">
         <classpath refid="classpath" />
         <classpath location="test"/>
         <test name="hellotest" haltonfailure="no" todir="test/results">
